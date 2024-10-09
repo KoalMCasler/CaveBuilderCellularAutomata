@@ -7,6 +7,7 @@ public class MapGenerator : MonoBehaviour {
 
 	public int width;
 	public int height;
+	public int smoothingValue;
 
 	public string seed;
 	public bool useRandomSeed;
@@ -34,7 +35,7 @@ public class MapGenerator : MonoBehaviour {
 		map = new int[width,height];
 		RandomFillMap();
 
-		for (int i = 0; i < 5; i ++)
+		for (int i = 0; i < smoothingValue; i ++)
 		{
 			SmoothMap();
 		}

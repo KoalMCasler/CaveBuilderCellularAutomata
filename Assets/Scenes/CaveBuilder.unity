@@ -711,8 +711,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 100
   height: 60
+  smoothingValue: 3
   seed: merlyn
-  useRandomSeed: 1
+  useRandomSeed: 0
   randomFillPercent: 47
 --- !u!4 &2025613400
 Transform:
